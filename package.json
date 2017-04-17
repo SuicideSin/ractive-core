@@ -1,0 +1,22 @@
+{
+	"name": "ractive-core",
+	"version": "0.0.2",
+	"description": "A simple framework to develop chatbots, supporting cryptography and different protocols",
+	"author": "Paola Villarreal <paw@paw.mx>",
+	"main": "obj/bot.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/pa-w/ractive-core"
+	},
+	"keywords": [
+		"chatbots",
+		"xmpp",
+		"otr"
+	],
+	"dependencies": {
+		"node-xmpp-client": "*",
+		"otr": "*"
+	},
+	"license": "GPLv3"
+
+}

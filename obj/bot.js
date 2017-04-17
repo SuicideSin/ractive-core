@@ -26,6 +26,8 @@ Bot.prototype.connect = function () {
 	try {
 		var p = require ("./protocols/" + this.protocol ());
 		this._protocol = new p (this);
+		var cb = this.emit;
+		this._protocol.on ("error", function (err) { cb (err); }); 
 	} catch (e) { this.emit ("error", e); }
 
 	this._buddyList = new BuddyList (this.username ());
